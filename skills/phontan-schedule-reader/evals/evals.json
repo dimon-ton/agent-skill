@@ -1,0 +1,40 @@
+{
+  "skill_name": "phontan-schedule-reader",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Find ครูปาณิสรา's teaching schedule. Show me all the classes she teaches.",
+      "expected_output": "Table showing ครูปาณิสรา's classes with day, grade, time, and subject",
+      "files": [],
+      "assertions": []
+    },
+    {
+      "id": 2,
+      "prompt": "List all classes on Monday (จันทร์) for grade ป.4",
+      "expected_output": "Table showing all Monday classes for ป.4 with subjects and teachers",
+      "files": [],
+      "assertions": []
+    },
+    {
+      "id": 3,
+      "prompt": "Extract the full schedule from the ม.1-3 sheet and show me ครูดวงใจ's classes",
+      "expected_output": "ครูดวงใจ's classes from the ม.1-3 sheet organized by day and time",
+      "files": [],
+      "assertions": []
+    },
+    {
+      "id": 4,
+      "prompt": "Show me all available sheets in the Phontan schedule Excel file",
+      "expected_output": "List of all 20 sheets/tabs in the workbook",
+      "files": [],
+      "assertions": []
+    },
+    {
+      "id": 5,
+      "prompt": "Find all Science (วิทยาศาสตร์) classes in the ป.4-6 schedule",
+      "expected_output": "Table of all Science classes with day, time, grade, and teacher",
+      "files": [],
+      "assertions": []
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+name: Update Skill Index
+
+on:
+  push:
+    branches: [main]
+    paths: ['skills/**']
+
+permissions:
+  contents: write
+  pages: write
+
+jobs:
+  update-index:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Generate index.json
+        run: |
+          python3 -c "
+          import json, os, re
+
+          base = 'https://dimon-ton.github.io/agent-skill'
+          skills = []
+
+          for skill_dir in sorted(os.listdir('skills')):
+              skill_path = os.path.join('skills', skill_dir, 'SKILL.md')
+              if not os.path.exists(skill_path):
+                  continue
+              content = open(skill_path, encoding='utf-8').read()
+
+              desc = ''
+              m = re.search(r'^description:\s*(.+)$', content, re.M)
+              if m:
+                  desc = m.group(1).strip().strip('\"').strip(\"'\")
+
+              skills.append({
+                  'name': skill_dir,
+                  'description': desc,
+                  'url': f'{base}/skills/{skill_dir}/SKILL.md'
+              })
+
+          index = {
+              'name': 'Agent Skill Center',
+              'description': 'Community skills hub for opencode and any agent CLI. Hosted by dimon-ton.',
+              'url': 'https://github.com/dimon-ton/agent-skill',
+              'skills': skills
+          }
+
+          os.makedirs('.well-known/skills', exist_ok=True)
+          with open('.well-known/skills/index.json', 'w', encoding='utf-8') as f:
+              json.dump(index, f, indent=2, ensure_ascii=False)
+          print(f'Indexed {len(skills)} skills')
+          "
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add .well-known/skills/index.json
+          git diff --cached --quiet || git commit -m "auto: update skill index"
+          git push

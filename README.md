@@ -28,6 +28,7 @@ Or load a single skill:
 
 | Skill | Description |
 |-------|-------------|
+| [character-sheet-design](skills/character-sheet-design/SKILL.md) | Design reusable character systems with stable identity, wardrobe items, outfit recipes, and prompt adapters |
 | [docx-edit](skills/docx-edit/SKILL.md) | Edit .docx files preserving formatting |
 | [excel-vba](skills/excel-vba/SKILL.md) | Read, edit, run VBA macros in Excel |
 | [gemini](skills/gemini/SKILL.md) | Interact with Google Gemini CLI |
@@ -41,6 +42,7 @@ Or load a single skill:
 | [ralph-tui-create-beads](skills/ralph-tui-create-beads/SKILL.md) | Convert PRDs to beads |
 | [ralph-tui-create-beads-rust](skills/ralph-tui-create-beads-rust/SKILL.md) | Convert PRDs to beads (Rust) |
 | [ralph-tui-create-json](skills/ralph-tui-create-json/SKILL.md) | Convert PRDs to prd.json |
+| [use-character-sheet](skills/use-character-sheet/SKILL.md) | Apply existing character sheets for new images or edits while preserving identity |
 
 ## Adding a New Skill
 

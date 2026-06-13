@@ -1,0 +1,4 @@
+interface:
+  display_name: "Use Character Sheet"
+  short_description: "Use character sheets without identity drift"
+  default_prompt: "Use $use-character-sheet to generate a new image from this character sheet while preserving identity and changing only the requested outfit, pose, or scene."

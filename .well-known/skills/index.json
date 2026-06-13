@@ -4,6 +4,11 @@
   "url": "https://github.com/dimon-ton/agent-skill",
   "skills": [
     {
+      "name": "character-sheet-design",
+      "description": "Create, revise, audit, or prompt character sheets that preserve a character's identity across many outfits, poses, scenes, and image-generation models. Use when the user asks for a reusable character sheet, identity bible, wardrobe or outfit system, clothing item library, prompt adapter, expression/pose sheet, consistent character prompts, or help separating character identity from clothing and styling.",
+      "url": "https://dimon-ton.github.io/agent-skill/skills/character-sheet-design/SKILL.md"
+    },
+    {
       "name": "docx-edit",
       "description": "Edit existing .docx files while preserving original formatting using python-docx and docxedit libraries. Trigger when user wants to edit, find-replace, modify tables, or fill data in Word documents — especially SAR templates, reports, or any existing .docx that must keep its formatting. Also trigger on phrases like \"edit docx\", \"edit word file\", \"fill SAR\", \"replace in docx\", \"docx table\", \"python-docx\".",
       "url": "https://dimon-ton.github.io/agent-skill/skills/docx-edit/SKILL.md"
@@ -67,6 +72,11 @@
       "name": "ralph-tui-prd",
       "description": "Generate a Product Requirements Document (PRD) for ralph-tui task orchestration. Creates PRDs with user stories that can be converted to beads issues or prd.json for automated execution. Triggers on: create a prd, write prd for, plan this feature, requirements for, spec out.",
       "url": "https://dimon-ton.github.io/agent-skill/skills/ralph-tui-prd/SKILL.md"
+    },
+    {
+      "name": "use-character-sheet",
+      "description": "Use an existing character sheet correctly for image generation or image editing while preserving character identity. Trigger when the user provides or references a character sheet, persona bible, turnaround sheet, expression sheet, pose sheet, or asks to create new images, outfits, poses, profile pictures, scenes, or variants of the same character without identity drift.",
+      "url": "https://dimon-ton.github.io/agent-skill/skills/use-character-sheet/SKILL.md"
     }
   ]
 }

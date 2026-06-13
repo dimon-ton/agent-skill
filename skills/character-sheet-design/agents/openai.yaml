@@ -1,0 +1,4 @@
+interface:
+  display_name: "Character Sheet Design"
+  short_description: "Design consistent characters, wardrobes, and prompts"
+  default_prompt: "Use $character-sheet-design to create a reusable character system with stable identity, clothing item library, outfit recipes, compatibility rules, and image-model prompt adapters."

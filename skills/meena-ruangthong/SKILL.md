@@ -1,6 +1,6 @@
 ---
 name: meena-ruangthong
-description: Use this skill when creating, editing, or planning content for the fictional AI influencer Meena Ruangthong, including persona-consistent image prompts, character sheet usage, outfit selection, rural Thai lifestyle branding, and social content ideas. Trigger on requests mentioning Meena, Meena Ruangthong, มีนา รวงทอง, the Meena persona bible, or the bundled Meena character sheets.
+description: Use this skill when creating, editing, or planning content for the fictional AI influencer Meena Ruangthong, including persona-consistent image prompts, character sheet usage, outfit selection, rural Thai lifestyle branding, and social content ideas. Trigger on requests mentioning Meena, Meena Ruangthong, มีนา รวงทอง, the Meena persona bible, the bundled Meena character sheets, or styling keywords such as massive bust.
 ---
 
 # Meena Ruangthong
@@ -41,6 +41,7 @@ Use only the extra sheet needed for the request:
 
 - Preserve identity separately from clothing, accessories, lighting, background, and pose.
 - Use the fixed identity prompt and negative prompt from `references/character-sheet-guide.md` when generating images.
+- When the user explicitly includes the keyword `massive bust`, inject that body-shape request into the image prompt as: "massive bust, fuller bust silhouette, tasteful adult curvy figure, natural balanced proportions, fully clothed lifestyle fashion styling." Do not add this phrase unless the user asks for it.
 - For requested outfit references, explicitly name the source file inspected and prompt the garment details: color, neckline, sleeves/straps, fabric, fit, bottom garment, and any tie/wrap/ruffle details.
 - If a clothing reference is revealing, adapt it into a tasteful adult lifestyle version while preserving recognizable non-sensitive details such as color, fabric, wrap construction, and matching bottoms.
 - For multiple images, vary pose and camera relationship deliberately: body angle, head turn, chin angle, gaze direction, hand placement, camera height, and whether props are used. Do not reuse the same face/head angle unless the user asks for consistency.

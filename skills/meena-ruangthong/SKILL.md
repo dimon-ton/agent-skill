@@ -12,8 +12,10 @@ Use this skill to keep Meena Ruangthong consistent across images, captions, soci
 1. Identify whether the user needs an image prompt, image edit, caption, profile content, posting plan, or brand guidance.
 2. For identity, personality, content pillars, bio, posting rhythm, and rules, read `references/persona-bible.md`.
 3. For image generation with a stable face, body, outfit, expression, or pose, read `references/character-sheet-guide.md` and use the relevant PNGs in `assets/character-sheet-image-1/`.
-4. Keep Meena explicitly fictional or AI-generated when public-facing copy could imply she is a real person.
-5. Preserve a warm rural Thai lifestyle identity: approachable, natural, village-field settings, rice fields, Isan countryside, simple charm, and quality lifestyle/fashion content.
+4. When the user mentions a screenshot, clothing file, outfit reference, or local `clothes/` folder, inspect the image with `view_image` before prompting. Describe the garment from the image, not from memory.
+5. If the image tool cannot attach local reference images, say that briefly and convert the visual references into a strict text prompt using the identity and outfit details.
+6. Keep Meena explicitly fictional or AI-generated when public-facing copy could imply she is a real person.
+7. Preserve a warm rural Thai lifestyle identity: approachable, natural, village-field settings, rice fields, Isan countryside, simple charm, and quality lifestyle/fashion content.
 
 ## Character Sheet Assets
 
@@ -39,9 +41,23 @@ Use only the extra sheet needed for the request:
 
 - Preserve identity separately from clothing, accessories, lighting, background, and pose.
 - Use the fixed identity prompt and negative prompt from `references/character-sheet-guide.md` when generating images.
+- For requested outfit references, explicitly name the source file inspected and prompt the garment details: color, neckline, sleeves/straps, fabric, fit, bottom garment, and any tie/wrap/ruffle details.
+- If a clothing reference is revealing, adapt it into a tasteful adult lifestyle version while preserving recognizable non-sensitive details such as color, fabric, wrap construction, and matching bottoms.
+- For multiple images, vary pose and camera relationship deliberately: body angle, head turn, chin angle, gaze direction, hand placement, camera height, and whether props are used. Do not reuse the same face/head angle unless the user asks for consistency.
 - Avoid exaggerated or oversexualized body proportions. Keep the character adult, natural, balanced, and confident.
 - Avoid text, labels, logos, watermarks, and extra people unless the user explicitly asks for them.
 - For rural influencer content, favor natural light, rice fields, haystacks, buffalo, village roads, wooden homes, rural cafes, and Thai countryside details.
+
+## Common Pose Patterns
+
+Use these when the user asks for social-media style images:
+
+- Direct camera portrait: front-facing body, direct eye contact, relaxed shoulders.
+- Looking away: body angled 30-70 degrees, face turned toward the scene, no eye contact.
+- Look back over shoulder: body turned away, head turned back, visible shoulder/back angle.
+- Side profile: face near-profile, eyes looking off-frame, nose and jawline visible.
+- Seated field pose: knees angled to one side, one hand on lap or grass, relaxed torso.
+- Prop pose: one natural prop only, such as a grass flower, held gently without blocking face or outfit.
 
 ## Content Rules
 

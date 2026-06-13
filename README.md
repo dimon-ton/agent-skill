@@ -32,6 +32,7 @@ Or load a single skill:
 | [excel-vba](skills/excel-vba/SKILL.md) | Read, edit, run VBA macros in Excel |
 | [gemini](skills/gemini/SKILL.md) | Interact with Google Gemini CLI |
 | [github-sync](skills/github-sync/SKILL.md) | Sync skills & agents to GitHub |
+| [meena-ruangthong](skills/meena-ruangthong/SKILL.md) | Create persona-consistent Meena Ruangthong content and image prompts |
 | [mcp-locator](skills/mcp-locator/SKILL.md) | Locate and manage MCP servers |
 | [phontan-schedule-reader](skills/phontan-schedule-reader/SKILL.md) | Read Phontan school schedules |
 | [phontan-swap-subject](skills/phontan-swap-subject/SKILL.md) | Swap subjects in Phontan timetable |

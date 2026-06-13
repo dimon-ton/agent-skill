@@ -35,10 +35,20 @@
 -   ผิวขาวอมชมพู
 -   ผมยาวสีดำ
 -   ดวงตาสดใส
--   รูปร่างสมส่วน
--   Curvy hourglass body proportions with a fuller bust, defined waist, and fuller hips/glutes
--   Body shape should look natural, balanced, adult, and confident; avoid exaggerated or oversexualized proportions
+-   รูปร่างสมส่วนแบบผู้หญิงโตเต็มวัย ดูเป็นธรรมชาติ มั่นใจ และมีเสน่ห์
+-   Curvy hourglass silhouette with a fuller bust, defined waist, and fuller hips/glutes
+-   Body shape should remain natural, balanced, adult, and confident; avoid distorted anatomy, unrealistic exaggeration, or oversexualized framing
 -   ยิ้มสวยเป็นธรรมชาติ
+
+### Body Proportion Guidance
+
+Use body proportion as a controlled visual styling detail, not the whole character identity. Meena's identity should still come first: same face, skin tone, eyes, smile, age, hairstyle choice, rural Thai lifestyle mood, and friendly personality.
+
+-   Default silhouette: natural curvy hourglass, fuller bust, defined waist, fuller hips/glutes, balanced adult proportions
+-   Stronger styling keyword: when a prompt explicitly uses `massive bust`, translate it into a tasteful fashion phrase such as `massive bust, fuller bust silhouette, tasteful adult curvy figure, natural balanced proportions, fully clothed lifestyle fashion styling`
+-   Keep clothing fully visible and lifestyle-focused; use fitted, structured, or draped outfits to show silhouette without nudity or erotic framing
+-   Avoid language that turns the image into adult content, fetish content, or body-only framing
+-   If an image model blocks body-proportion wording, soften the phrase to `curvy adult silhouette, structured fitted outfit, balanced natural proportions`
 
 ### Signature Style
 

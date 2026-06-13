@@ -19,14 +19,16 @@ Use this skill to keep Meena Ruangthong consistent across images, captions, soci
 
 ## Character Sheet Assets
 
-Use `assets/character-sheet-image-1/01-base-identity-sheet.png` as the primary identity reference whenever image consistency matters.
+Use `assets/character-sheet-image-1/11-long-hair-identity-sheet.png` as the primary everyday identity reference for rural lifestyle, casual fashion, dance, and social posts.
+
+Use `assets/character-sheet-image-1/01-base-identity-sheet.png` when the request needs the original updo, tied hair, spa/professional styling, or a neutral body/face compatibility master.
 
 Use only the extra sheet needed for the request:
 
 | Need | Asset |
 | --- | --- |
 | Original identity/spa reference | `00-reference-image-1.png` |
-| Base identity lock | `01-base-identity-sheet.png` |
+| Updo/base identity lock | `01-base-identity-sheet.png` |
 | Expressions | `02-expression-sheet.png` |
 | Standing/walking/sitting poses | `03-pose-sheet.png` |
 | Spa professional outfit | `04-spa-professional-outfit-sheet.png` |
@@ -36,11 +38,21 @@ Use only the extra sheet needed for the request:
 | Traditional Thai outfit | `08-traditional-thai-outfit-sheet.png` |
 | Evening outfit | `09-luxury-evening-outfit-sheet.png` |
 | Sportswear outfit | `10-sportswear-outfit-sheet.png` |
+| Everyday long-hair identity lock | `11-long-hair-identity-sheet.png` |
+
+## Visual Identity Findings
+
+- Face: soft oval face, fair smooth skin, large dark brown almond-shaped eyes, softly arched dark brows, small refined nose, naturally full pink lips, subtle rosy blush, and a calm friendly smile.
+- Everyday hair: long dark brown to near-black hair, loose and softly wavy, falling past the shoulders toward mid-back, with relaxed countryside texture.
+- Updo hair: neat dark updo with soft crown volume and a few loose face-framing strands; use only when the requested look needs tied hair or the original outfit sheets.
+- Body/clothing baseline: adult natural curvy silhouette with balanced proportions; white fitted T-shirt, light blue straight-leg jeans, and white low-top sneakers are the neutral casual baseline.
+- Sheet roles: expression and pose sheets use the updo but should transfer only expression or pose unless the user also requests updo hair.
 
 ## Prompting Rules
 
 - Preserve identity separately from clothing, accessories, lighting, background, and pose.
-- Use the fixed identity prompt and negative prompt from `references/character-sheet-guide.md` when generating images.
+- Use the matching fixed identity prompt and negative prompt from `references/character-sheet-guide.md`: long-hair prompt for everyday Meena, updo prompt for original/tied-hair Meena.
+- Never paste an updo negative prompt into a long-hair request; it can block the intended loose hair.
 - When the user explicitly includes the keyword `massive bust`, inject that body-shape request into the image prompt as: "massive bust, fuller bust silhouette, tasteful adult curvy figure, natural balanced proportions, fully clothed lifestyle fashion styling." Do not add this phrase unless the user asks for it.
 - For requested outfit references, explicitly name the source file inspected and prompt the garment details: color, neckline, sleeves/straps, fabric, fit, bottom garment, and any tie/wrap/ruffle details.
 - If a clothing reference is revealing, adapt it into a tasteful adult lifestyle version while preserving recognizable non-sensitive details such as color, fabric, wrap construction, and matching bottoms.

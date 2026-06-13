@@ -1,68 +1,72 @@
 {
-  "$schema": "https://opencode.ai/config.json",
   "name": "Agent Skill Center",
   "description": "Community skills hub for opencode and any agent CLI. Hosted by dimon-ton.",
   "url": "https://github.com/dimon-ton/agent-skill",
   "skills": [
     {
       "name": "docx-edit",
-      "description": "Edit existing .docx files while preserving original formatting using python-docx and docxedit libraries.",
+      "description": "Edit existing .docx files while preserving original formatting using python-docx and docxedit libraries. Trigger when user wants to edit, find-replace, modify tables, or fill data in Word documents — especially SAR templates, reports, or any existing .docx that must keep its formatting. Also trigger on phrases like \"edit docx\", \"edit word file\", \"fill SAR\", \"replace in docx\", \"docx table\", \"python-docx\".",
       "url": "https://dimon-ton.github.io/agent-skill/skills/docx-edit/SKILL.md"
     },
     {
       "name": "excel-vba",
-      "description": "Read, edit, add, delete, and run VBA macro code inside Excel .xlsm files using win32com (pywin32).",
+      "description": "Read, edit, add, delete, and run VBA macro code inside Excel .xlsm files using win32com (pywin32). Trigger when user wants to read VBA code, edit or rewrite a VBA module, add a new macro, delete VBA code, or run an existing macro in an Excel file. Also trigger on phrases like \"read VBA\", \"edit macro\", \"run macro\", \"add VBA code\", \"modify VBA\", \"write VBA to excel\", \"excel macro python\", \"win32com VBA\".",
       "url": "https://dimon-ton.github.io/agent-skill/skills/excel-vba/SKILL.md"
     },
     {
       "name": "gemini",
-      "description": "Interact with Google's Gemini CLI tool - AI queries, code analysis, extensions, MCP servers, skills management.",
+      "description": "Use this skill whenever the user wants to interact with Google's Gemini CLI tool — including running AI queries, asking Gemini to analyze files or code, managing Gemini extensions, configuring MCP servers, managing skills, resuming sessions, or piping content to Gemini. Trigger on phrases like \"ask gemini\", \"run gemini\", \"use gemini to\", \"gemini query\", \"query with gemini\", \"send this to gemini\", \"pipe to gemini\", \"gemini extensions\", \"gemini mcp\", \"gemini skills\", \"install gemini extension\", or any time the user wants to use Gemini as an AI assistant from the terminal. Also trigger when user says things like \"can gemini do X\" or \"have gemini look at this\".",
       "url": "https://dimon-ton.github.io/agent-skill/skills/gemini/SKILL.md"
     },
     {
+      "name": "github-sync",
+      "description": "Sync opencode skills and agents to the GitHub repository dimon-ton/opencode-skills. Trigger when user wants to push, upload, sync, or update skills/agents to GitHub. Also trigger on phrases like \"push skills to github\", \"sync skills\", \"upload agents\", \"update opencode-skills repo\", \"push to github\".",
+      "url": "https://dimon-ton.github.io/agent-skill/skills/github-sync/SKILL.md"
+    },
+    {
       "name": "mcp-locator",
-      "description": "Locate, list, diagnose, and manage MCP servers in Claude Code.",
+      "description": "|",
       "url": "https://dimon-ton.github.io/agent-skill/skills/mcp-locator/SKILL.md"
     },
     {
+      "name": "meena-ruangthong",
+      "description": "Use this skill when creating, editing, or planning content for the fictional AI influencer Meena Ruangthong, including persona-consistent image prompts, character sheet usage, outfit selection, rural Thai lifestyle branding, and social content ideas. Trigger on requests mentioning Meena, Meena Ruangthong, มีนา รวงทอง, the Meena persona bible, or the bundled Meena character sheets.",
+      "url": "https://dimon-ton.github.io/agent-skill/skills/meena-ruangthong/SKILL.md"
+    },
+    {
       "name": "phontan-schedule-reader",
-      "description": "Extract and analyze school schedules from Phontan Excel files. Works with Elementary, Junior High, and Primary grades.",
+      "description": "Extract and analyze school schedules from Phontan (โรงเรียนบ้านโพนแท่น) Excel files. Use this skill whenever the user wants to read, search, or analyze the school schedule — find a teacher's classes, list classes by day/time, extract student schedules, or get structured schedule data. Works with Elementary (ป.1-3), Junior High (ม.1-3), and Primary (ป.4-6) grades for any semester/year.",
       "url": "https://dimon-ton.github.io/agent-skill/skills/phontan-schedule-reader/SKILL.md"
     },
     {
       "name": "phontan-swap-subject",
-      "description": "Swap two schedule cells in the Phontan school timetable with teacher collision checking.",
+      "description": ">",
       "url": "https://dimon-ton.github.io/agent-skill/skills/phontan-swap-subject/SKILL.md"
     },
     {
       "name": "phontan-teacher-analysis",
-      "description": "Analyze teacher workload from the Phontan school schedule Excel file.",
+      "description": ">",
       "url": "https://dimon-ton.github.io/agent-skill/skills/phontan-teacher-analysis/SKILL.md"
     },
     {
-      "name": "ralph-tui-prd",
-      "description": "Generate Product Requirements Documents (PRD) for ralph-tui task orchestration.",
-      "url": "https://dimon-ton.github.io/agent-skill/skills/ralph-tui-prd/SKILL.md"
-    },
-    {
       "name": "ralph-tui-create-beads",
-      "description": "Convert PRDs to beads for ralph-tui execution. Creates epics with child beads for each user story.",
+      "description": "Convert PRDs to beads for ralph-tui execution. Creates an epic with child beads for each user story. Use when you have a PRD and want to use ralph-tui with beads as the task source. Triggers on: create beads, convert prd to beads, beads for ralph, ralph beads.",
       "url": "https://dimon-ton.github.io/agent-skill/skills/ralph-tui-create-beads/SKILL.md"
     },
     {
       "name": "ralph-tui-create-beads-rust",
-      "description": "Convert PRDs to beads for ralph-tui using beads-rust (br CLI).",
+      "description": "Convert PRDs to beads for ralph-tui execution using beads-rust (br CLI). Creates an epic with child beads for each user story. Use when you have a PRD and want to use ralph-tui with beads-rust as the task source. Triggers on: create beads, convert prd to beads, beads for ralph, ralph beads, br beads.",
       "url": "https://dimon-ton.github.io/agent-skill/skills/ralph-tui-create-beads-rust/SKILL.md"
     },
     {
       "name": "ralph-tui-create-json",
-      "description": "Convert PRDs to prd.json format for ralph-tui execution.",
+      "description": "Convert PRDs to prd.json format for ralph-tui execution. Creates JSON task files with user stories, acceptance criteria, and dependencies. Triggers on: create prd.json, convert to json, ralph json, create json tasks.",
       "url": "https://dimon-ton.github.io/agent-skill/skills/ralph-tui-create-json/SKILL.md"
     },
     {
-      "name": "github-sync",
-      "description": "Sync opencode skills and agents to the GitHub repository dimon-ton/agent-skill.",
-      "url": "https://dimon-ton.github.io/agent-skill/skills/github-sync/SKILL.md"
+      "name": "ralph-tui-prd",
+      "description": "Generate a Product Requirements Document (PRD) for ralph-tui task orchestration. Creates PRDs with user stories that can be converted to beads issues or prd.json for automated execution. Triggers on: create a prd, write prd for, plan this feature, requirements for, spec out.",
+      "url": "https://dimon-ton.github.io/agent-skill/skills/ralph-tui-prd/SKILL.md"
     }
   ]
 }

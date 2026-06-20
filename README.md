@@ -43,6 +43,7 @@ Or load a single skill:
 | [ralph-tui-create-beads-rust](skills/ralph-tui-create-beads-rust/SKILL.md) | Convert PRDs to beads (Rust) |
 | [ralph-tui-create-json](skills/ralph-tui-create-json/SKILL.md) | Convert PRDs to prd.json |
 | [use-character-sheet](skills/use-character-sheet/SKILL.md) | Apply existing character sheets for new images or edits while preserving identity |
+| [vm-gui-vnc](skills/vm-gui-vnc/SKILL.md) | Run graphical desktop applications securely on a headless VM through VNC and SSH tunneling |
 
 ## Adding a New Skill
 

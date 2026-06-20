@@ -1,0 +1,4 @@
+interface:
+  display_name: "VM GUI over VNC"
+  short_description: "Run VM desktop apps securely through VNC"
+  default_prompt: "Use $vm-gui-vnc to set up a GUI on this VM and connect to it securely over VNC."

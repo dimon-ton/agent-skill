@@ -1,0 +1,4 @@
+interface:
+  display_name: "Git + Clasp Publish"
+  short_description: "Safely sync GitHub and Apps Script releases"
+  default_prompt: "Use $git-clasp-publish to check this repository and publish any needed GitHub and Apps Script updates."

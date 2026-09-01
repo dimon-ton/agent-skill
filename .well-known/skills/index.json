@@ -24,6 +24,11 @@
       "url": "https://dimon-ton.github.io/agent-skill/skills/gemini/SKILL.md"
     },
     {
+      "name": "git-clasp-publish",
+      "description": "Check whether a local Git repository is current, commit and push intended changes to GitHub, and conditionally push and redeploy a Google Apps Script project with clasp. Use when the user asks to check the latest code, sync or publish a repository, or commit/push and redeploy Apps Script if needed.",
+      "url": "https://dimon-ton.github.io/agent-skill/skills/git-clasp-publish/SKILL.md"
+    },
+    {
       "name": "github-sync",
       "description": "Sync opencode skills and agents to the GitHub repository dimon-ton/opencode-skills. Trigger when user wants to push, upload, sync, or update skills/agents to GitHub. Also trigger on phrases like \"push skills to github\", \"sync skills\", \"upload agents\", \"update opencode-skills repo\", \"push to github\".",
       "url": "https://dimon-ton.github.io/agent-skill/skills/github-sync/SKILL.md"

@@ -36,6 +36,7 @@ Or load a single skill:
 | [git-clasp-publish](skills/git-clasp-publish/SKILL.md) | Check, commit, and publish GitHub and Apps Script changes only when needed |
 | [meena-ruangthong](skills/meena-ruangthong/SKILL.md) | Create persona-consistent Meena Ruangthong content and image prompts |
 | [mcp-locator](skills/mcp-locator/SKILL.md) | Locate and manage MCP servers |
+| [netsupport-school-control](skills/netsupport-school-control/SKILL.md) | Connect to, view, and control authorized computers with NetSupport School |
 | [phontan-schedule-reader](skills/phontan-schedule-reader/SKILL.md) | Read Phontan school schedules |
 | [phontan-swap-subject](skills/phontan-swap-subject/SKILL.md) | Swap subjects in Phontan timetable |
 | [phontan-teacher-analysis](skills/phontan-teacher-analysis/SKILL.md) | Analyze teacher workload |

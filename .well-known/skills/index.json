@@ -44,6 +44,11 @@
       "url": "https://dimon-ton.github.io/agent-skill/skills/meena-ruangthong/SKILL.md"
     },
     {
+      "name": "netsupport-nperf-speedtest",
+      "description": "Test the internet speed of each authorized NetSupport School computer with nPerf through Tech Console, and save per-machine results.",
+      "url": "https://dimon-ton.github.io/agent-skill/skills/netsupport-nperf-speedtest/SKILL.md"
+    },
+    {
       "name": "netsupport-school-control",
       "description": "Help connect to, view, and control an authorized remote computer using NetSupport School Tutor and Student, including setup and connection troubleshooting.",
       "url": "https://dimon-ton.github.io/agent-skill/skills/netsupport-school-control/SKILL.md"
